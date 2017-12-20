@@ -14,7 +14,7 @@
 
 (defvar myPackages
   '(better-defaults
-    material-theme))
+    solarized-theme))
 
 (mapc #'(lambda (package)
     (unless (package-installed-p package)
@@ -22,5 +22,5 @@
       myPackages)
 
 (setq inhibit-startup-message t) ;; hide the startup message
-(load-theme 'material t) ;; load material theme
+(load-theme 'solarized t) ;; load material theme
 (setq column-number-mode t) ;; enable columns
